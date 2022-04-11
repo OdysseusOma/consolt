@@ -1,0 +1,55 @@
+.navContainer {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 50px;
+}
+
+.navbar {
+    flex: 1;
+    display: flex;
+    max-height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo {
+    padding-right: 25px;
+}
+
+
+.listMenu {
+    width: fit-content;
+    padding: 10px;
+    margin-right: 100px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.listicles {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    float: right;
+    gap: 60px;
+}
+
+.list {
+    text-decoration: none;
+}
+
+
+
+/*=================== MEDIA QUERIES (Medium devices) ===================*/
+@media screen and (max-width: 1024px) {
+
+}
+
+/*=================== MEDIA QUERIES (Small devices) ===================*/
+@media screen and (max-width: 600px) {
+    .navContainer {
+        margin-top: 50px;
+    }
+    .listMenu {
+        display: none;
+    }
+}

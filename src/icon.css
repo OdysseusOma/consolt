@@ -1,0 +1,268 @@
+.arrange {
+    display: flex;
+    justify-content: right;
+    padding-right: 10px;
+    
+}
+
+.img {
+    display: flex;
+    justify-content: right;
+    margin: 50px 0 0 0;
+    z-index: 1;
+}
+
+img {
+    justify-content: right;
+    max-width: 476px;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.circles {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
+    align-items: stretch;
+    
+}
+
+.orangeEllipse {
+    width: 61px;
+    height: 54px;
+    background: #FF6B17;
+    filter: blur(30px);
+    position: relative;
+    right: 15vw;
+}
+
+.blueEllipse {
+    width: 60px;
+    height: 54px;
+    margin-left: 50px;
+    background: #9917FF;
+    filter: blur(20px);
+    z-index: -5;
+
+}
+.yellowEllipse {
+    width: 60px;
+    height: 54px;
+    margin-left: 50px;
+    background: #cdf51a;
+    filter: blur(20px);
+    position: relative;
+    top: -30vh;
+    right: -20vw;
+    z-index: -5;
+
+}
+
+
+.ellipseGroup {
+    display: flex;
+    
+    position: relative;
+    z-index: -2;
+}
+
+.ellipse1 {
+    grid-column-start: 3;
+    position: absolute;
+    width: 633px;
+    height: 733px;
+    border: 1px solid rgb(160, 155, 155);
+    border-radius: 50%;
+    right: -70px;
+    top: -30px;
+
+}
+
+.ellipse2 {
+    grid-column-start: 3;
+    width: 561px;
+    height: 640px;
+    position: absolute;
+    border: 1px solid rgb(160, 155, 155);
+    border-radius: 50%;
+    right: -70px;
+    
+}
+
+.ellipse3 {
+    grid-column-start: 3;
+    width: 494px;
+    height: 522px;
+    border: 1px solid rgb(160, 155, 155);
+    border-radius: 50%;
+    position: absolute;
+    right: -70px;
+    top: 30px;
+}
+
+.vectors {
+    z-index: 3;
+    display: flex;
+    gap: 10px;
+
+}
+
+.chatVector {
+    position: relative;
+    top: -10vh;
+    right: -5vw;
+    width: 56px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #074DFF;
+    border-radius: 100px;
+    box-shadow: 15px 0px 40px 10px #17D5FF;
+}
+
+.chatCart {
+    position: relative;
+    z-index: 3;
+    top: -50vh;
+    right: -10vw;
+    width: 56px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #074DFF;
+    border-radius: 100px;
+}
+
+.chatInfo {
+    position: relative;
+    z-index: 3;
+    top: -60vh;
+    right: -25vw;
+    width: 56px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #074DFF;
+    border-radius: 100px;
+}
+
+
+
+
+svg:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+/*=================== MEDIA QUERIES (Medium devices) ===================*/
+
+@media screen and (max-width: 1020px) {
+    
+    .chatVector {
+        position: relative;
+        left: 60vw;
+        top: 14vh;
+        z-index: -5;
+    }
+
+    .chatCart {
+        position: relative;
+        top: -37vh;
+        right: -65vw;
+    }
+
+    .chatInfo {
+        position: relative;
+        top: -20vh;
+    }
+
+}
+
+
+/*=================== MEDIA QUERIES (Small devices) ===================*/
+@media screen and (max-width: 600px) {
+
+    .arrange {
+        position: relative;
+        right: -90px;
+        top: 50px;
+    }
+    
+    .img {
+        display: flex;
+        justify-content: right;
+        margin: 50px 80px 0 0;
+        z-index: 1;
+    }
+    
+    img {
+        justify-content: right;
+        position: relative;
+        width: 376px;
+        height: 200px;
+        top: -10px;
+        left: 70px;
+    }
+
+    .vectors {
+        z-index: 1;
+    }
+
+    .chatVector {
+        position: relative;
+        left: 40vw;
+        top: 1vh;
+        width: 46px;
+        height: 39px;
+    }
+
+    .chatCart {
+        position: relative;
+        width: 46px;
+        height: 39px;
+        top: -17vh;
+        right: -65vw;
+    }
+
+    .chatInfo {
+        position: relative;
+        width: 46px;
+        height: 39px;
+        top: -15vh;
+    }
+
+  
+    .ellipse1 {
+        width: 280px;
+        height: 270px;
+        right: 10vw;
+        top: 1vh;
+    }
+
+    .ellipse2 {
+        width: 260px;
+        height: 230px;
+        right: 9vw;
+        top: 3vh;
+    }
+
+    .ellipse3 {
+        width: 240px;
+        height: 213px;
+        right: 8vw;
+        top: 5vh;
+    }
+
+    .yellowEllipse {
+        position: relative;
+        top: -48vh;
+        right: 5vw;
+    }
+}

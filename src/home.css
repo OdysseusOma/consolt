@@ -1,0 +1,228 @@
+.container {
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.textarea {
+    margin: 50px 0 0 50px;
+}
+
+.mainText {
+    max-width: 700px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 0.035em;
+}
+
+.smallText {
+    max-width: 550px;
+    flex-wrap: wrap;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    z-index: 15;
+}
+
+.ctaArea {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.cta {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+
+svg {
+    transition: all 1s ease-in-out;
+}
+
+svg:hover {
+    transform: scale(1.2);
+}
+
+
+
+.click {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#stateBtn {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+}
+
+.regDesc {
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.userForm {
+    position: absolute;
+    margin-top: 20px;
+    display: flex;
+    top: 63vh;
+    right: 50vw;
+    flex-direction: column;
+    row-gap: 10px;
+
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background: #e7e2ff;
+    border: 3px solid rgba(41, 7, 119, 0.459);
+    resize: none;
+    font-size: 16px;
+}
+
+.formBtn {
+    width: fit-content;
+    padding: 10px;
+    border-radius: 15px;
+    background: rgb(20, 20, 143);
+    color: white;
+    border: none;
+}
+
+
+
+
+/*=================== MEDIA QUERIES (Medium devices) ===================*/
+/*@media screen and (max-width: 1024px) {
+    .mainText {
+        width: 400px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 70px;
+        margin-top: 50px;
+        letter-spacing: 0.035em;
+        z-index: 2;
+    }
+
+    
+    .smallText {
+        width: 400px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        margin-top: 20px;
+        line-height: 25px;
+        letter-spacing: 0.01em;
+    }
+      
+}
+*/
+
+/*=================== MEDIA QUERIES (Medium devices) ===================*/
+
+@media screen and (max-width: 1020px) {
+    
+    .userForm {
+        position: absolute;
+        right: 10vw;
+        top: 30vh;
+        display: flex;
+        z-index: 10;
+
+    }    
+
+}
+
+
+
+/*=================== MEDIA QUERIES (Small devices) ===================*/
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 5px;
+    }
+    .Home {
+        overflow: hidden;
+    }
+    .textarea {
+        padding: 10px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mainText {
+        max-width: 400px;
+        padding: 10px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 50px;
+        letter-spacing: 0.035em;
+        z-index: 2;
+        text-align: center;
+    }
+
+    
+    .smallText {
+        max-width: 300px;
+        padding: 10px;
+        font-style: normal;
+        text-align: center;
+        font-weight: 300;
+        font-size: 20px;
+        margin-top: 20px;
+        line-height: 25px;
+        letter-spacing: 0.01em;
+    }
+
+    .click {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        position: relative;
+        top: -3vh;
+    }
+
+    .btnSvg {
+        height: 80px;
+
+    }
+
+    .userForm {
+        position: absolute;
+        right: 45vw;
+        top: -2vh;
+        display: flex;
+        z-index: 10;
+
+    }
+
+    
+    input, textarea {
+        padding: 3px;
+        min-width: 100px;
+    }
+
+
+}

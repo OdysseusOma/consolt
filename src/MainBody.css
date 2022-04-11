@@ -1,0 +1,52 @@
+.mainBody {
+    display: flex;
+}
+
+.homer {
+    flex: 1;
+}
+
+.iconer {
+    flex: 1;
+}
+
+
+/*=================== MEDIA QUERIES (Medium devices) ===================*/
+
+@media screen and (max-width: 1020px) {
+    .mainBody {
+        flex-direction: column;
+    }
+    
+    .homer {
+        order: 2;
+        position: relative;
+        top: -20vh;
+        z-index: 5;
+    }
+    
+    .iconer {
+        order: 1;
+    }
+    
+}
+
+/*=================== MEDIA QUERIES (Small devices) ===================*/
+@media screen and (max-width: 600px) {
+    .mainBody {
+        flex-direction: column;
+    }
+    
+    .homer {
+        order: 2;
+        position: relative;
+        top: -5vh;
+    }
+    
+    .iconer {
+        order: 1;
+    }
+    
+
+   
+}
