@@ -2,6 +2,7 @@
     display: flex;
     justify-content: right;
     padding-right: 10px;
+    /* background: red; */
     
 }
 
@@ -164,6 +165,18 @@ svg:hover {
 /*=================== MEDIA QUERIES (Medium devices) ===================*/
 
 @media screen and (max-width: 1020px) {
+    .arrange {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .img {
+        display: flex;
+        justify-content: center;
+        margin: 50px;
+        z-index: 1;
+    }
     
     .chatVector {
         position: relative;
@@ -186,36 +199,44 @@ svg:hover {
 }
 
 
+
+
+@media screen and (max-width: 800) {
+
+}
+
+
+
+
 /*=================== MEDIA QUERIES (Small devices) ===================*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 
     .arrange {
         position: relative;
-        right: -90px;
-        top: 50px;
     }
     
     .img {
         display: flex;
-        justify-content: right;
-        margin: 50px 80px 0 0;
+        justify-content: center;
+        margin: 50px;
         z-index: 1;
     }
     
     img {
-        justify-content: right;
-        position: relative;
-        width: 376px;
-        height: 200px;
-        top: -10px;
-        left: 70px;
+        max-width: 376px;
+        max-height: 200px;
+    }
+
+    .ellipseGroup {
+        display: none;
     }
 
     .vectors {
         z-index: 1;
+        display: none;
     }
-
-    .chatVector {
+    
+    /*.chatVector {
         position: relative;
         left: 40vw;
         top: 1vh;
@@ -237,8 +258,8 @@ svg:hover {
         height: 39px;
         top: -15vh;
     }
-
-  
+    
+    
     .ellipse1 {
         width: 280px;
         height: 270px;
@@ -258,7 +279,7 @@ svg:hover {
         height: 213px;
         right: 8vw;
         top: 5vh;
-    }
+    } */
 
     .yellowEllipse {
         position: relative;

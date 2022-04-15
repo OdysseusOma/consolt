@@ -1,6 +1,10 @@
 .container {
     display: flex;
     align-items: center;
+    /* padding-bottom: 100px;
+    padding-bottom: 10rem; */
+    padding-right: 1.5%;
+    width: 57%;
 
 }
 
@@ -17,6 +21,7 @@
     font-size: 80px;
     line-height: 90px;
     letter-spacing: 0.035em;
+    margin-bottom: 20px;
 }
 
 .smallText {
@@ -28,20 +33,48 @@
     line-height: 25px;
     letter-spacing: 0.01em;
     z-index: 15;
+    margin-bottom: 35px;
 }
 
 .ctaArea {
-    margin-top: 10px;
     display: flex;
     align-items: center;
-    gap: 30px;
 }
 
-.cta {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
+.userForm {
+}
+
+input { 
+    width: 300px;
+    background: #FFFFFF;
+    
+    box-sizing: border-box;
+    border-color: #000000;
+    
+    color: #0a1c2e;
+    font-size: 16px;
+    padding-left: 1rem;
+    line-height: 2.5rem;
+    text-align: left;
+    flex-grow: 1;
+    /* transition: border-color .25s cubic-bezier(.45,.01,.45,.95); */
+    transition-property: border-color;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.45, 0.01, 0.45, 0.95);
+    transition-delay: 0s;
+    
+}
+
+.formBtn {
+    width: 100px;
+    background: #63B8A7;
+    height: inherit;
+    font-size: 16px;
+    line-height: 2.5rem;
+    border-radius: 0 5px 5px 0;
+    
+    box-sizing: border-box;
+    border-color: #63B8A7;
 }
 
 
@@ -54,7 +87,7 @@ svg:hover {
 }
 
 
-
+/* 
 .click {
     display: flex;
     flex-direction: column;
@@ -66,7 +99,6 @@ svg:hover {
     border: none;
     background: none;
     cursor: pointer;
-
 }
 
 .regDesc {
@@ -84,9 +116,7 @@ svg:hover {
     right: 50vw;
     flex-direction: column;
     row-gap: 10px;
-
 }
-
 
 input, textarea {
     width: 100%;
@@ -105,97 +135,88 @@ input, textarea {
     background: rgb(20, 20, 143);
     color: white;
     border: none;
-}
+} */
 
 
 
 
 /*=================== MEDIA QUERIES (Medium devices) ===================*/
-/*@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+    .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        min-height: 500px;
+        min-height: 50rem;
+        width: 74%;
+    }
+
+    .textarea {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .mainText {
-        width: 400px;
+        max-width: 400px;
+        margin-bottom: 20px;
         font-style: normal;
         font-weight: 700;
-        font-size: 70px;
-        line-height: 70px;
-        margin-top: 50px;
+        font-size: 60px;
+        line-height: 50px;
         letter-spacing: 0.035em;
         z-index: 2;
     }
 
-    
-    .smallText {
-        width: 400px;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 20px;
-        margin-top: 20px;
-        line-height: 25px;
-        letter-spacing: 0.01em;
-    }
-      
 }
-*/
 
-/*=================== MEDIA QUERIES (Medium devices) ===================*/
 
-@media screen and (max-width: 1020px) {
-    
-    .userForm {
-        position: absolute;
-        right: 10vw;
-        top: 30vh;
-        display: flex;
-        z-index: 10;
-
-    }    
-
-}
 
 
 
 /*=================== MEDIA QUERIES (Small devices) ===================*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .container {
         padding: 5px;
+        margin: auto;
     }
-    .Home {
-        overflow: hidden;
-    }
+ 
     .textarea {
-        padding: 10px;
-        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         align-items: center;
         flex-direction: column;
     }
 
     .mainText {
-        max-width: 400px;
-        padding: 10px;
+        max-width: 450px;
         font-style: normal;
         font-weight: 700;
         font-size: 45px;
         line-height: 50px;
         letter-spacing: 0.035em;
         z-index: 2;
-        text-align: center;
+        text-align: left;
     }
 
     
     .smallText {
         max-width: 300px;
-        padding: 10px;
         font-style: normal;
-        text-align: center;
+        text-align: left;
         font-weight: 300;
         font-size: 20px;
-        margin-top: 20px;
         line-height: 25px;
         letter-spacing: 0.01em;
     }
 
-    .click {
+    /* .click {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -217,12 +238,11 @@ input, textarea {
         z-index: 10;
 
     }
-
     
     input, textarea {
         padding: 3px;
         min-width: 100px;
-    }
+    } */
 
 
 }

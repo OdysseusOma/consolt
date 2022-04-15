@@ -1,7 +1,23 @@
 .navContainer {
     display: flex;
+    top: 0;
     align-items: center;
-    margin: 10px 0 0 50px;
+    padding: 10px 0 10px 0;
+    /* background: blue; */
+    width: 100%;;
+
+}
+
+.navContainerPadding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+    max-width: 102.4rem;
+    width: 90%;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navbar {
@@ -10,6 +26,12 @@
     max-height: 30px;
     font-size: 20px;
     font-weight: 600;
+    align-items: center;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
 }
 
 .logo {
@@ -19,8 +41,8 @@
 
 .listMenu {
     width: fit-content;
+    display: flex;
     padding: 10px;
-    margin-right: 100px;
     font-weight: 500;
     font-size: 16px;
 }
@@ -29,7 +51,6 @@
     display: flex;
     text-decoration: none;
     list-style-type: none;
-    float: right;
     gap: 60px;
 }
 
@@ -45,9 +66,12 @@
 }
 
 /*=================== MEDIA QUERIES (Small devices) ===================*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .navContainer {
-        margin-top: 50px;
+        padding-bottom: 15px;
+        padding-bottom: 1.5rem;
+        padding-top: 20px;
+        padding-top: 2rem;
     }
     .listMenu {
         display: none;

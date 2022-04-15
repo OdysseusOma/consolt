@@ -11,11 +11,11 @@ const Icon = () => {
             <div className="circles">
                 <div className="orangeEllipse"></div>
             </div>
-            <div className="ellipseGroup">
+            {/* <div className="ellipseGroup">
                 <div className="ellipse1"></div>
                 <div className="ellipse2"></div>
                 <div className="ellipse3"></div>
-            </div>  
+            </div>   */}
         </div>
 
 

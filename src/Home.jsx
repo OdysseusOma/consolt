@@ -2,20 +2,32 @@ import React, { useState } from 'react'
 import './home.css'
 
 function Home() {
-  const [showForm, setShowForm] = useState(false)
-  const show = () => setShowForm(!showForm)
+  // const [showForm, setShowForm] = useState(false)
+  // const show = () => setShowForm(!showForm)
   
   return (
 
     <div className="container">
-        <div className="circles">
-          <div className="yellowEllipse"></div>
-        </div>
-        <div className="textarea">
+      <div className="circles">
+        <div className="yellowEllipse"></div>
+      </div>
+      <div className="textarea">
+          <div className="textAreaContainer">
             <div className="mainText">EASE OF HEALTHCARE</div>
             <div className="smallText">We’re a company leveraging on existing technologies to provide easy-to-use and easy-to-access services. We’re building a health community online, we’ll like you to join us today.</div>
             <div className="ctaArea">
-                <div className="cta">Join us today!</div>
+              <form className='userForm' action="https://formsubmit.co/adebayoomirin@gmail.com">
+                <input type="email" name='email' placeholder='Your Email' required />
+                <button type="submit" className='formBtn'>Subscribe</button>
+              </form>
+            </div>
+          </div>
+      </div>
+                
+      <div className="circles">
+        <div className="blueEllipse"></div>
+      </div>
+                {/* <div className="cta">Join us today!</div>
                 
                 
                 <div className="click">
@@ -37,12 +49,7 @@ function Home() {
                       <button type="submit" className='formBtn'>Join Waitlist</button>
                     </form>
                   )}
-                </div>
-                <div className="circles">
-                  <div className="blueEllipse"></div>
-                </div>
-        </div>
-      </div>        
+                </div> */}       
     </div>
     
   )
