@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './home.css'
+import SignUpForm from './SignUpForm'
 
 function Home() {
   // const [showForm, setShowForm] = useState(false)
@@ -16,13 +17,14 @@ function Home() {
             <div className="mainText">EASE OF HEALTHCARE</div>
             <div className="smallText">We’re a company leveraging on existing technologies to provide easy-to-use and easy-to-access services. We’re building a health community online, we’ll like you to join us today.</div>
             <div className="ctaArea">
-              <form className='userForm' action="https://formsubmit.co/adebayoomirin@gmail.com" method="POST">
+              {/* <form className='userForm' action="https://formsubmit.co/adebayoomirin@gmail.com" method="POST">
                 <input type="email" name='email' placeholder='Your Email' required />
                 <input type="hidden" name="_autoresponse" value="your custom message"></input>
                 <button type="submit" className='formBtn'>Subscribe</button>
-              </form>
+              </form> */}
             </div>
           </div>
+          <SignUpForm />
       </div>
                 
       <div className="circles">
@@ -30,7 +32,6 @@ function Home() {
       </div>
                 {/* <div className="cta">Join us today!</div>
                 
-                 this is not necessary
                 <div className="click">
                   <button id='stateBtn' onClick={show}>
                     <svg width="104" height="106" viewBox="0 0 104 106" fill="none" xmlns="http://www.w3.org/2000/svg" className='btnSvg'>
