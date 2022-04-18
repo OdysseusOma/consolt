@@ -4,7 +4,10 @@
     align-items: center;
     padding: 10px 0 10px 0;
     /* background: blue; */
-    width: 100%;;
+    /* width: 100%;; */
+    max-width: 1024px;
+    max-width: 102.4rem;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -27,7 +30,7 @@
     font-size: 20px;
     font-weight: 600;
     align-items: center;
-
+    gap: 0.2rem;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-box-pack: justify;
@@ -35,7 +38,12 @@
 }
 
 .logo {
-    padding-right: 25px;
+    
+}
+
+.test {
+    font-weight: 700;
+    font-size: 24px;
 }
 
 
@@ -75,5 +83,9 @@
     }
     .listMenu {
         display: none;
+    }
+
+    .navbar {
+        gap: 5px;
     }
 }

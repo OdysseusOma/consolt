@@ -16,7 +16,7 @@ function Navbar() {
             </svg>
           </div>
 
-          <div className="test">Consolt</div>
+          <div className="test">consolt</div>
         </a>
 
         <nav className="listMenu">
