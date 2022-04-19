@@ -7,7 +7,7 @@ const NewsletterSubscribe = () => {
   const sendEmail = (e) => {
     e.preventDefault();
   
-    emailjs.sendForm('service_sla4yzg', 'template_q2pjxu4', form.current, '_o6tQdMbGlAkLExfW')
+    emailjs.sendForm('service_20amzma', 'template_nhccqcc', form.current, '5JrTwOkjsRei7gf_z')
       .then((result) => {
         alert("Email sent successfully!");
       }, (error) => {
